@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html{
+  font-size: 62.5%;
+  }
+body{
+  color: #333;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+}
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+ header{
+   background-image: url("../img/main.png");
+   background-size: cover;
+   background-position: center center;
+   height: 470px;
+   position: relative;
+ }
+ .header-left{
+   float: left;
+   margin:60px 165px;
+   zoom:0.5;
+   border-radius: 5px;
+   border:3px solid black;
+ }
+ .header-right{
+   float: right;
+ }
+ .menu-bar{
+   display: none;
+ }
+ .header-lists{
+   display:flex;
+   margin-right: 40px;
+ }
+ .header-list{
+   flex:auto;
+   font-size:18px;
+   margin:50px 35px;
+ }
+ .header-list a{
+   color: #333;
+ }
+ header a:hover{
+   opacity: 0.5;
+ }
+ .catch-copy{
+   font-size:48px;
+   font-weight: lighter;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
+   margin:auto;
+ }
+ 
+ 
+ /* --------------------------------
+ * main
+ * -------------------------------- */
+ .main-wrapper,.middle-wrapper{
+   text-align: center;
+ }
+ .main-title{
+   margin:90px auto 75px auto;
+   font-size:40px;
+ }
+ .news-lists{
+   width: 55%;
+   text-align: left;
+   margin: 0 auto; /*中央寄せ*/
+ }
+ .news-list{
+   border-bottom: 1px solid black;
+   padding-bottom: 30px;
+   padding-top: 25px;
+ }
+ .news-list a{
+   color: #333;
+ }
+ .news-date{
+   display: inline-block;
+   font-size: 18px;
+ }
+.news-logo{
+  display: inline-block;
+  border:1px solid black;
+  padding:4px 6px;
+  margin: 0 25px;
+}
+.news{
+  display: inline-block;
+  font-size: 18px;
+}
+
+/* --------------------------------
+ * middle
+ * -------------------------------- */
+ .middle-wrapper{
+   margin: 200px auto;
+   width: 80%;
+ }
+ .middle-wrapper img{
+   zoom:0.5;
+ }
+ .middle-left{
+   float: left;
+   width:45%;
+ }
+ .middle-right{
+   float: right;
+   width: 45%;
+ }
+ .middle-name{
+   padding: 30px 0 20px 0;
+   font-size:25px;
+ }
+ .prefecture{
+   font-size:15px;
+   padding-bottom: 20px;
+ }
+.middle-wrapper a:hover{
+  opacity: 0.5;
+}
+.middle-btn{
+  font-size:20px;
+  width:200px;
+  padding:15px 30px;
+  border:1px solid black;
+  margin:80px auto;
+}
+
+ /* --------------------------------
+ * under
+ * -------------------------------- */
+.under-wrapper{
+  display: table;
+  width: 100%;
+}
+.boxes{
+  display: table-cell;
+}
+.boxes img{
+  width:32.85vw;
+  height:32.85vw;
+}
+.under-wrapper a:hover{
+  opacity: 0.5;
+}
+/* --------------------------------
+ * under-menu
+ * -------------------------------- */
+ .under-menu,footer{
+   background-color: black;
+ }
+ .under-menu{
+   height:120px;
+ }
+ .under-menu-left{
+   float: left;
+   padding:60px 165px;
+   zoom:0.5;
+ }
+ .under-menu-right{
+   float: right;
+ }
+ .under-menu-lists{
+   display:flex;
+   margin-right: 40px;
+ }
+ .under-menu-list{
+   flex:auto;
+   font-size:18px;
+   margin:50px 35px;
+ }
+ .under-menu-list a,footer{
+   color: white;
+ }
+ .under-menu a:hover{
+   opacity: 0.5;
+ }
+ /* --------------------------------
+ * footer
+ * -------------------------------- */
+ footer{
+   text-align: center;
+   font-size:12px;
+   padding:15px;
+ }
+
+ /* --------------------------------
+ * another
+ * -------------------------------- */
+ .clear{
+   clear: left;
+ }
+
+ /* --------------------------------
+ * responsive
+ * -------------------------------- */
+
+ @media(max-width:1000px ) {
+   header{
+     height:500px;
+   }
+   .header-left{
+   padding:30px 50px;
+   zoom:0.35;
+  }
+ .header-right{
+   float: right;
+  }
+ .menu-bar{
+   display:block;
+   padding:30px 20px;
+  }
+ .header-lists{
+   display:none;
+  }
+ .catch-copy{
+  font-size:23px;
+  }
+  .main-title{
+   margin:50px auto;
+   font-size:23px;
+ }
+ .news-lists{
+   width: 95%;
+ }
+ .news-date{
+   display: inline-block;
+   font-size: 13px;
+ }
+.news{
+  display: block;
+  font-size: 18px;
+  padding-top:20px;
+ }
+ .middle-wrapper{
+   margin: 70px auto;
+   width: 90%;
+ }
+ .middle-left,.middle-right{
+   float: none;
+   margin: 0 auto;
+   width:100%;
+ }
+ .middle-wrapper .middle-image{
+   width:100%;
+   height:auto;
+ }
+ .middle-more{
+   margin-bottom:100px;
+ }
+ .middle-btn{
+   margin:0 auto 80px auto;
+ }
+ .boxes{
+   display: block;
+ }
+ .boxes img{
+   width: 100vw;
+   height: auto;
+ }
+ .under-menu{
+   height:auto;
+ }
+ .under-menu-left,.under-menu-right{
+   float: none;
+ }
+ .under-menu-lists{
+   display:block;
+   padding:10px 0;
+   margin: 0;
+ }
+ .under-menu-list{
+   text-align: center;
+   font-size:18px;
+   margin:35px auto;
+ }
+ .under-menu-left {
+   text-align: center;
+   padding:35px;
+ }
+ 
+}
+
+ @media (max-width:670px ) {
+   header{
+     height:400px;
+   }
+   .catch-copy{
+     white-space: nowrap;
+   }
+   .main-title{
+   margin:50px auto 10px auto;
+   font-size:23px;
+   }
+   .alpha{
+     padding-bottom: 30px;
+   }
+ }
